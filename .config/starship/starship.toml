@@ -1,0 +1,26 @@
+[cmd_duration]
+disabled = true
+
+[directory]
+read_only = " 󰌾"
+
+[git_branch]
+symbol = " "
+
+[line_break]
+disabled = true
+
+[c]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rust]
+symbol = " "
