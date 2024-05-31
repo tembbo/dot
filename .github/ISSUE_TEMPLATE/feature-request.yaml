@@ -1,0 +1,19 @@
+name: 🚀 Feature Request
+description: Suggest and idea, feature or enhancment.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for submitting an idea.
+
+  - type: textarea
+    attributes:
+      label: What is the feature you are proposing?
+
+  - type: textarea
+    attributes:
+      label: What is the problem this feature would solve?
+
+  - type: textarea
+    attributes:
+      label: What alternatives have you considered?
