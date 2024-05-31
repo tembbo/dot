@@ -10,32 +10,38 @@ body:
     attributes:
       label: What platform is your computer?
       description: Specify your operating system and its version.
+
   - type: input
     attributes:
       label: What terminal emulator are you using?
       description: Specify what terminal emulator you are using.
+
   - type: input
     attributes:
       label: What shell are you using?
       description: Specify your shell and its version.
+
   - type: textarea
     attributes:
       label: What steps can reproduce the bug?
       description: Explain the steps to reproduce the bug. Try to be as detailed as possible.
     validations:
       required: true
+
   - type: textarea
     attributes:
       label: What is the expected behavior?
       description: Describe what you expected to happen.
     validations:
       required: true
+
   - type: textarea
     attributes:
       label: What do you see instead?
       description: Describe what actually happens.
     validations:
       required: true
+
   - type: textarea
     attributes:
       label: Additional information.
