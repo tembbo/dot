@@ -11,6 +11,7 @@ export GOMODCACHE="$HOME/.cache/go/pkg/mod"
 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "/Users/guse/.bun/_bun" ] && source "/Users/guse/.bun/_bun"
 
 eval "$(zoxide init --cmd cd zsh)"
 
