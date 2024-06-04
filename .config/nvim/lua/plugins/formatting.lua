@@ -9,6 +9,7 @@ return {
 				javascript = { "prettier" },
 				lua = { "stylua" },
 				python = { "black", "isort" },
+				rust = { "rustfmt" },
 				vue = { "prettier", "rustywind" },
 			},
 		})
