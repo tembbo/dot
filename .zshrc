@@ -2,7 +2,9 @@ alias vim="nvim"
 alias ll="eza --long --no-time --icons=always --git-ignore --all --sort=type"
 alias lt="eza --long --no-time --tree --icons=always --git-ignore --all --sort=type"
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
