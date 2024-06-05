@@ -8,6 +8,7 @@ fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
+export PATH="$PATH:$HOME/.cache/go/bin"
 export GOPATH="$HOME/.cache/go"
 export GOMODCACHE="$HOME/.cache/go/pkg/mod"
 
