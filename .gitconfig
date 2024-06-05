@@ -1,7 +1,12 @@
 [user]
     name = Ed
 	email = alberths2011@icloud.com
+    
 [init]
 	defaultBranch = main
+
 [core]
 	editor = nvim
+
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
