@@ -8,4 +8,5 @@
 [alias]
     s = status -s
     c = commit -m
+    p = push
     l = log --graph --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
