@@ -1,3 +1,6 @@
+[c]
+symbol = " "
+
 [cmd_duration]
 disabled = true
 
@@ -7,14 +10,11 @@ read_only = " 󰌾"
 [git_branch]
 symbol = " "
 
-[line_break]
-disabled = true
-
-[c]
-symbol = " "
-
 [golang]
 symbol = " "
+
+[line_break]
+disabled = true
 
 [lua]
 symbol = " "
