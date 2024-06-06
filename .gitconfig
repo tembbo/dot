@@ -6,4 +6,4 @@
 	editor = nvim
 
 [alias]
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%Creset <%ae> %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
