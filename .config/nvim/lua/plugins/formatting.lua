@@ -11,15 +11,13 @@ return {
 				lua = { "stylua" },
 				python = { "black", "isort" },
 				rust = { "rustfmt" },
-				vue = { "prettier", "rustywind" },
+				vue = { "prettier", "rustywind" }
 			},
-		})
-
-		vim.api.nvim_create_autocmd("BufWritePre", {
-			pattern = "*",
-			callback = function(args)
-				require("conform").format({ bufnr = args.buf })
-			end,
+			format_on_save = {
+				lsp_fallback = true,
+				async = false,
+				timeout_ms = 1000,
+			},
 		})
 	end,
 }
