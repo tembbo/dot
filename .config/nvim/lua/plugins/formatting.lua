@@ -7,7 +7,7 @@ return {
 				css = { "prettier" },
 				go = { "gofumpt" },
 				html = { "prettier" },
-				javascript = { "prettier" },
+				javascript = { "biome" },
 				lua = { "stylua" },
 				python = { "black", "isort" },
 				rust = { "rustfmt" },
