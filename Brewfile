@@ -1,0 +1,15 @@
+tap "homebrew/bundle"
+tap "mrkai77/cask"
+
+brew "eza"
+brew "lua"
+brew "neovim"
+brew "ripgrep"
+brew "starship"
+brew "stow"
+brew "tmux"
+brew "zoxide"
+
+cask "alacritty"
+cask "font-jetbrains-mono-nerd-font"
+cask "loop"
