@@ -11,7 +11,7 @@ return {
 				lua = { "stylua" },
 				python = { "black", "isort" },
 				rust = { "rustfmt" },
-				vue = { "prettier", "rustywind" }
+				vue = { "prettier", "rustywind" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
