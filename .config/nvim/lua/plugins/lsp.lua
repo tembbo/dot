@@ -43,6 +43,9 @@ return {
 			lspconfig.rust_analyzer.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.svelte.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.tailwindcss.setup({
 				capabilities = capabilities,
 			})
