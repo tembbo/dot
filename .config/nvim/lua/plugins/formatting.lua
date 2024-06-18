@@ -8,6 +8,7 @@ return {
 				go = { "gofumpt" },
 				html = { "prettier" },
 				javascript = { "biome" },
+				json = { "biome" },
 				lua = { "stylua" },
 				python = { "black", "isort" },
 				rust = { "rustfmt" },
