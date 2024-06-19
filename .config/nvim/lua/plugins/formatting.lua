@@ -15,7 +15,7 @@ return {
 				svelte = { "rustywind" },
 			},
 			format_on_save = {
-				lsp_format = "fallback",
+				lsp_format = "first",
 				timeout_ms = 500,
 			},
 		})
