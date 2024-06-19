@@ -13,7 +13,6 @@ return {
 				python = { "black", "isort" },
 				rust = { "rustfmt" },
 				svelte = { "rustywind" },
-				vue = { "prettier", "rustywind" },
 			},
 			format_on_save = {
 				lsp_format = "fallback",
