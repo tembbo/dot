@@ -37,7 +37,7 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.pylyzer.setup({
+			lspconfig.ruff_lsp.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.rust_analyzer.setup({
