@@ -12,6 +12,7 @@ return {
 				lua = { "stylua" },
 				python = { "black", "isort" },
 				rust = { "rustfmt" },
+				svelte = { "rustywind" },
 				vue = { "prettier", "rustywind" },
 			},
 			format_on_save = {
