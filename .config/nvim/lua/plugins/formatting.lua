@@ -10,7 +10,7 @@ return {
 				javascript = { "biome" },
 				json = { "biome" },
 				lua = { "stylua" },
-				python = { "black", "isort" },
+				python = { "ruff" },
 				rust = { "rustfmt" },
 				svelte = { "rustywind" },
 			},
