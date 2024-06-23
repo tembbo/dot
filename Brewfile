@@ -9,6 +9,7 @@ brew "starship"
 brew "stow"
 brew "tmux"
 brew "zoxide"
+brew "tre-command"
 
 cask "alacritty"
 cask "font-jetbrains-mono-nerd-font"
