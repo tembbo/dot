@@ -12,5 +12,6 @@ brew "zoxide"
 brew "tre-command"
 
 cask "alacritty"
+cask "raycast"
 cask "font-jetbrains-mono-nerd-font"
 cask "loop"
