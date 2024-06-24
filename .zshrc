@@ -15,6 +15,8 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 [ -s "/Users/guse/.bun/_bun" ] && source "/Users/guse/.bun/_bun"
 
+source <(fzf --zsh)
+
 eval "$(zoxide init --cmd cd zsh)"
 
 eval "$(starship init zsh)"
