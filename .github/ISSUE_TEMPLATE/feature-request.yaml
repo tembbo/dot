@@ -1,19 +1,22 @@
 name: 🚀 Feature Request
-description: Suggest and idea, feature or enhancment.
+description: Suggest an idea, feature or enhancement.
 labels: [enhancement]
 body:
   - type: markdown
     attributes:
-      value: Thank you for submitting an idea.
+      value: Thank you for taking the time to submit your idea!
 
   - type: textarea
     attributes:
-      label: What is the feature you are proposing?
+      label: What feature are you proposing?
+      description: Describe the feature or enhancement you would like to see.
 
   - type: textarea
     attributes:
-      label: What is the problem this feature would solve?
+      label: What problem does this feature solve?
+      description: Describe the issue or challenge this feature aims to address.
 
   - type: textarea
     attributes:
-      label: What alternatives have you considered?
+      label: Any additional details?
+      description: Include any additional information, examples or specific use cases.

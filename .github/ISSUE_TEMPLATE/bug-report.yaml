@@ -1,42 +1,27 @@
 name: 🐛 Bug Report
-description: Report an issue that should be fixed.
+description: Report a bug or issue.
 labels: [bug]
 body:
   - type: markdown
     attributes:
-      value: Thank you for submitting a bug report.
-
-  - type: input
-    attributes:
-      label: What platform is your computer?
-      description: Specify your operating system and its version.
-
-  - type: input
-    attributes:
-      label: What terminal emulator are you using?
-      description: Specify what terminal emulator you are using.
-
-  - type: input
-    attributes:
-      label: What shell are you using?
-      description: Specify your shell and its version.
+      value: Thank you for taking the time to report this issue!
 
   - type: textarea
     attributes:
-      label: What steps can reproduce the bug?
-      description: Explain the steps to reproduce the bug. Try to be as detailed as possible.
+      label: What issue are you experiencing?
+      description: Describe the bug or issue you encountered.
 
   - type: textarea
     attributes:
-      label: What is the expected behavior?
+      label: What are the steps to reproduce the issue?
+      description: Provide clear steps to reproduce the bug or issue.
+
+  - type: textarea
+    attributes:
+      label: What behavior did you expect to see?
       description: Describe what you expected to happen.
 
   - type: textarea
     attributes:
-      label: What do you see instead?
-      description: Describe what actually happens.
-
-  - type: textarea
-    attributes:
-      label: Additional information.
-      description: Is there anything else related to the bug? Include any additional context or screenshots.
+      label: Any additional details?
+      description: Include any additional information, such as error messages or screenshots.
