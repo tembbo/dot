@@ -10,6 +10,8 @@ body:
     attributes:
       label: What feature are you proposing?
       description: Describe the feature or enhancement you would like to see.
+    validations:
+      required: true
 
   - type: textarea
     attributes:
