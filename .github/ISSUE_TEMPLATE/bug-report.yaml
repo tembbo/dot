@@ -30,4 +30,4 @@ body:
   - type: textarea
     attributes:
       label: Any additional details?
-      description: Include any additional information, such as error messages or screenshots.
+      description: Include any additional information you think may be relevant.
