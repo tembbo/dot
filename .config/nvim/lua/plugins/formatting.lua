@@ -12,11 +12,11 @@ return {
 				lua = { "stylua" },
 				python = { "ruff" },
 				rust = { "rustfmt" },
-				svelte = { "rustywind" },
+				svelte = { "prettier" },
 			},
 			format_on_save = {
-				lsp_format = "first",
 				timeout_ms = 500,
+				lsp_format = "fallback",
 			},
 		})
 	end,
