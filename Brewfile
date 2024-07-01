@@ -10,6 +10,7 @@ brew "zoxide"
 brew "tre-command"
 brew "tmux"
 brew "eza"
+brew "fzf"
 
 cask "raycast"
 cask "alacritty"
