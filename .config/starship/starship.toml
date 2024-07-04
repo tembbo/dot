@@ -6,7 +6,7 @@ $character\
 """
 
 [directory]
-style = "blue"
+style = "cyan"
 
 [git_branch]
 format = "[$branch](yellow) "
