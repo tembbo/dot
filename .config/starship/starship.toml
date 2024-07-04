@@ -1,32 +1,19 @@
-[c]
-symbol = " "
-
-[cmd_duration]
-disabled = true
+format = """
+$directory\
+$git_branch\
+$git_status\
+$character\
+"""
 
 [directory]
-read_only = " 󰌾"
-
-[docker_context]
-symbol = "󰡨 "
+style = "blue"
 
 [git_branch]
-symbol = " "
+format = "[$branch](yellow) "
 
-[golang]
-symbol = " "
+[git_status]
+format = '([$all_status$ahead_behind](yellow) )'
 
-[line_break]
-disabled = true
-
-[lua]
-symbol = " "
-
-[package]
-symbol = '󰏗 '
-
-[python]
-symbol = " "
-
-[rust]
-symbol = " "
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](purple)"
