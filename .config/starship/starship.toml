@@ -7,6 +7,9 @@ disabled = true
 [directory]
 read_only = " 󰌾"
 
+[docker_context]
+symbol = "󰡨 "
+
 [git_branch]
 symbol = " "
 
