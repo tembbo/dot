@@ -2,17 +2,26 @@ format = """
 $directory\
 $git_branch\
 $git_status\
-$character\
-"""
+$python\
+$character"""
 
 [directory]
-style = "cyan"
+style = "blue"
 
 [git_branch]
-format = "[$branch](yellow) "
+format = "[$branch](bright-black)"
 
 [git_status]
-format = '([$all_status$ahead_behind](yellow) )'
+format = "[(*$conflicted$untracked$modified$staged$renamed$deleted)(red)($ahead_behind)](red) "
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+
+[python]
+format = "[$virtualenv](yellow) "
 
 [character]
 success_symbol = "[❯](purple)"
