@@ -13,6 +13,7 @@ return {
 				python = { "ruff" },
 				rust = { "rustfmt" },
 				svelte = { "prettier" },
+				toml = { "taplo" },
 			},
 			format_on_save = {
 				timeout_ms = 500,
