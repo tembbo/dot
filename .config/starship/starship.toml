@@ -12,7 +12,7 @@ style = "blue"
 format = "[$branch](bright-black)"
 
 [git_status]
-format = "[(*$conflicted$untracked$modified$staged$renamed$deleted)(red)($ahead_behind)](red) "
+format = "[(*$conflicted$untracked$modified$staged$renamed$deleted) ($ahead_behind )](red)"
 conflicted = "​"
 untracked = "​"
 modified = "​"
