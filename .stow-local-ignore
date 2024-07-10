@@ -1,9 +1,6 @@
 \.git
-\.gitignore
-\.gitmodules
 \.github
 
 ^/README.*
-^/LICENSE.*
 
 ^/Brewfile
