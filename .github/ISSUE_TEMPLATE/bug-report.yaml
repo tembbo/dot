@@ -9,25 +9,13 @@ body:
   - type: textarea
     attributes:
       label: What issue are you experiencing?
-      description: Describe the bug or issue you encountered.
+      description: Describe the bug you encountered.
     validations:
       required: true
 
   - type: textarea
     attributes:
       label: What are the steps to reproduce the issue?
-      description: Provide clear steps to reproduce the bug or issue.
+      description: Provide clear steps to reproduce the bug.
     validations:
       required: true
-
-  - type: textarea
-    attributes:
-      label: What behavior did you expect to see?
-      description: Describe what you expected to happen.
-    validations:
-      required: true
-
-  - type: textarea
-    attributes:
-      label: Any additional details?
-      description: Include any additional information you think may be relevant.
