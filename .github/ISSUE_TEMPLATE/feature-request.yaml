@@ -17,8 +17,3 @@ body:
     attributes:
       label: What problem does this feature solve?
       description: Describe the issue or challenge this feature aims to address.
-
-  - type: textarea
-    attributes:
-      label: Any additional details?
-      description: Include any additional information, examples or specific use cases.
