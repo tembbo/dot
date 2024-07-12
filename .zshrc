@@ -17,7 +17,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 source <(fzf --zsh)
 
-eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
