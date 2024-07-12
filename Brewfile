@@ -13,6 +13,7 @@ brew "eza"
 brew "fzf"
 brew "bun"
 brew "go"
+brew "mas"
 
 cask "raycast"
 cask "alacritty"
