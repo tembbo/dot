@@ -1,5 +1,6 @@
 tap "mrkai77/cask"
 tap "homebrew/bundle"
+tap "oven-sh/bun"
 
 brew "stow"
 brew "ripgrep"
