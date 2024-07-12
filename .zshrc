@@ -5,8 +5,6 @@ if [[ $(uname -s) == "Darwin" ]]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-. "$HOME/.cargo/env"
-
 export PATH="$PATH:$HOME/.cache/go/bin"
 export GOPATH="$HOME/.cache/go"
 export GOMODCACHE="$HOME/.cache/go/pkg/mod"
