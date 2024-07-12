@@ -12,6 +12,7 @@ brew "tmux"
 brew "eza"
 brew "fzf"
 brew "bun"
+brew "go"
 
 cask "raycast"
 cask "alacritty"
