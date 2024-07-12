@@ -11,6 +11,7 @@ brew "tre-command"
 brew "tmux"
 brew "eza"
 brew "fzf"
+brew "bun"
 
 cask "raycast"
 cask "alacritty"
