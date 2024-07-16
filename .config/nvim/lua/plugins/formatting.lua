@@ -11,7 +11,6 @@ return {
                 json = { "biome" },
                 lua = { "stylua" },
                 python = { "ruff" },
-                rust = { "rustfmt" },
                 svelte = { "prettier" },
                 toml = { "taplo" },
             },

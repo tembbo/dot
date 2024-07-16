@@ -40,9 +40,6 @@ return {
             lspconfig.ruff_lsp.setup({
                 capabilities = capabilities,
             })
-            lspconfig.rust_analyzer.setup({
-                capabilities = capabilities,
-            })
             lspconfig.svelte.setup({
                 capabilities = capabilities,
             })
