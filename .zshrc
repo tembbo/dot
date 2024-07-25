@@ -1,5 +1,5 @@
 alias vim="nvim"
-alias ls="eza --icons=always --all --sort=type"
+alias ls="eza --all --sort=type"
 
 if [[ $(uname -s) == "Darwin" ]]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
