@@ -17,6 +17,6 @@ brew "go"
 brew "mas"
 
 cask "raycast"
-cask "alacritty"
+cask "kitty"
 cask "loop"
 cask "font-jetbrains-mono-nerd-font"
