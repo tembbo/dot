@@ -21,7 +21,7 @@ renamed = "​"
 deleted = "​"
 
 [python]
-format = "[$virtualenv](yellow) "
+format = "([$virtualenv](yellow) )"
 
 [character]
 success_symbol = "[❯](purple)"
