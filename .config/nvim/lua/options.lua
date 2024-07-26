@@ -23,4 +23,4 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
-keymap.set("n", "<leader>c", ":nohl<CR>", {})
+keymap.set("n", "<esc>", "<cmd>noh<cr><esc>", {})
