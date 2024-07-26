@@ -1,7 +1,7 @@
 return {
     "stevearc/oil.nvim",
     keys = {
-        { "-", function() require("oil").toggle_float() end },
+        { "-", "<cmd>Oil --float<cr>" },
     },
     opts = {
         skip_confirm_for_simple_edits = true,
