@@ -8,7 +8,7 @@ return {
             "saadparwaiz1/cmp_luasnip",
             "rafamadriz/friendly-snippets",
         },
-        config = function()
+        opts = function()
             local cmp = require("cmp")
             require("luasnip.loaders.from_vscode").lazy_load()
 
