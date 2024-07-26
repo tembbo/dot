@@ -4,6 +4,6 @@ return {
     config = function()
         require("gitsigns").setup()
 
-        vim.keymap.set("n", "<leader>h", ":Gitsigns preview_hunk<CR>", {})
+        vim.keymap.set("n", "<leader>h", "<cmd>Gitsigns preview_hunk<cr>", {})
     end,
 }
