@@ -29,24 +29,20 @@ return {
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
             local lspconfig = require("lspconfig")
-            lspconfig.gopls.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.lua_ls.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.ruff_lsp.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.svelte.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.tailwindcss.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.tsserver.setup({
-                capabilities = capabilities,
-            })
+            local servers = {
+                "gopls",
+                "lua_ls",
+                "ruff_lsp",
+                "svelte",
+                "tailwindcss",
+                "tsserver",
+            }
+
+            for _, lsp in ipairs(servers) do
+                lspconfig[lsp].setup({
+                    capabilities = capabilities,
+                })
+            end
 
             vim.keymap.set("n", "A", vim.lsp.buf.code_action)
             vim.keymap.set("n", "D", vim.lsp.buf.definition)
