@@ -8,6 +8,7 @@ vim.opt.rtp:prepend(lazypath)
 require("options")
 
 require("lazy").setup("plugins", {
+    install = { colorscheme = { "catppuccin" } },
     ui = {
         border = "rounded",
         backdrop = 100,
@@ -15,5 +16,4 @@ require("lazy").setup("plugins", {
     change_detection = {
         notify = false,
     },
-    install = { colorscheme = { "catppuccin" } },
 })
