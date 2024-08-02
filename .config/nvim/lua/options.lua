@@ -30,3 +30,4 @@ local map = function(keys, func) vim.keymap.set("n", keys, func) end
 map("<esc>", "<cmd>noh<cr><esc>")
 
 map("<leader>l", "<cmd>Lazy<cr>")
+map("<leader>m", "<cmd>Mason<cr>")
