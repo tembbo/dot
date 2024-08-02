@@ -6,6 +6,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("options")
+
 require("lazy").setup("plugins", {
     ui = {
         backdrop = 100,
