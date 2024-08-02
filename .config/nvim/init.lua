@@ -9,6 +9,7 @@ require("options")
 
 require("lazy").setup("plugins", {
     ui = {
+        border = "rounded",
         backdrop = 100,
     },
     change_detection = {
