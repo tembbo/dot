@@ -21,7 +21,7 @@ opt.swapfile = false
 
 vim.g.mapleader = " "
 
-function map(keys, func) vim.keymap.set("n", keys, func) end
+local map = function(keys, func) vim.keymap.set("n", keys, func) end
 
 map("<esc>", "<cmd>noh<cr><esc>")
 
