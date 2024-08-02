@@ -46,6 +46,7 @@ return {
 
             vim.keymap.set("n", "A", vim.lsp.buf.code_action)
             vim.keymap.set("n", "D", vim.lsp.buf.definition)
+            vim.keymap.set("n", "R", vim.lsp.buf.references)
             vim.keymap.set("n", "H", vim.lsp.buf.hover)
         end,
     },
