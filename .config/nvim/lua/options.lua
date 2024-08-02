@@ -1,23 +1,27 @@
-local opt = vim.opt
+local options = {
+    tabstop = 4,
+    shiftwidth = 4,
+    expandtab = true,
+    autoindent = true,
 
-opt.tabstop = 4
-opt.shiftwidth = 4
-opt.expandtab = true
-opt.autoindent = true
+    number = true,
+    relativenumber = true,
+    cursorline = true,
+    wrap = false,
+    termguicolors = true,
+    signcolumn = "yes",
 
-opt.number = true
-opt.relativenumber = true
-opt.cursorline = true
-opt.wrap = false
-opt.termguicolors = true
-opt.signcolumn = "yes"
+    ignorecase = true,
+    smartcase = true,
 
-opt.ignorecase = true
-opt.smartcase = true
+    backspace = "indent,eol,start",
+    clipboard = "unnamedplus",
+    swapfile = false,
+}
 
-opt.backspace = "indent,eol,start"
-opt.clipboard:append("unnamedplus")
-opt.swapfile = false
+for key, value in pairs(options) do
+    vim.opt[key] = value
+end
 
 vim.g.mapleader = " "
 
