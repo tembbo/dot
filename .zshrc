@@ -21,3 +21,5 @@ eval "$(zoxide init zsh --cmd cd)"
 
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
