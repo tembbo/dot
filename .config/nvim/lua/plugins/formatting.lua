@@ -16,7 +16,7 @@ return {
             javascript = { "biome" },
             json = { "biome" },
             lua = { "stylua" },
-            python = { "ruff" },
+            python = { "ruff_format" },
             svelte = { "prettier" },
             toml = { "taplo" },
         },
