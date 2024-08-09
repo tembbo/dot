@@ -1,6 +1,6 @@
 return {
     "lewis6991/gitsigns.nvim",
-    event = "BufReadPost",
+    event = { "BufReadPre", "BufNewFile" },
     keys = {
         { "<leader>h", "<cmd>Gitsigns preview_hunk<cr>" },
     },
