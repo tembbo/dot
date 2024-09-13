@@ -37,7 +37,7 @@ return {
                 "rust_analyzer",
                 "svelte",
                 "tailwindcss",
-                "tsserver",
+                "ts_ls",
             }
 
             for _, lsp in ipairs(servers) do
