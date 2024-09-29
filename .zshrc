@@ -3,6 +3,7 @@ alias ls="eza --group-directories-first"
 
 if [[ $(uname -s) == "Darwin" ]]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
+    export HOMEBREW_NO_AUTO_UPDATE=1
 fi
 
 export PATH="$(brew --prefix python)/libexec/bin:$PATH"
