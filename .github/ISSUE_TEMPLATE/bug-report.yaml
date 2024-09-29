@@ -2,20 +2,20 @@ name: 🐛 Bug Report
 description: Report a bug or issue.
 labels: [bug]
 body:
-    - type: markdown
-      attributes:
-          value: Thank you for taking the time to report this issue!
+  - type: markdown
+    attributes:
+      value: Thank you for taking the time to report this issue!
 
-    - type: textarea
-      attributes:
-          label: What issue are you experiencing?
-          description: Describe the bug you encountered.
-      validations:
-          required: true
+  - type: textarea
+    attributes:
+      label: What issue are you experiencing?
+      description: Describe the bug you encountered.
+    validations:
+      required: true
 
-    - type: textarea
-      attributes:
-          label: What are the steps to reproduce the issue?
-          description: Provide clear steps to reproduce the bug.
-      validations:
-          required: true
+  - type: textarea
+    attributes:
+      label: What are the steps to reproduce the issue?
+      description: Provide clear steps to reproduce the bug.
+    validations:
+      required: true
