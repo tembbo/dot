@@ -3,7 +3,7 @@
 > [!WARNING]
 > Don't blindly use my settings unless you know what you're doing.
 
-🚀 Installation
+## 🚀 Installation
 
 Before you begin, ensure that [GNU Stow](https://www.gnu.org/software/stow/) is installed on your system.
 
