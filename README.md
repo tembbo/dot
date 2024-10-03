@@ -5,7 +5,7 @@
 
 ## 🚀 Installation
 
-Before you begin, ensure that [GNU Stow](https://www.gnu.org/software/stow/) is installed on your system.
+Before you begin, ensure that [GNU Stow](https://www.gnu.org/software/stow/) is installed.
 
 1. **Clone the repository**:
 
