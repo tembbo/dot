@@ -24,3 +24,14 @@ Before you begin, ensure that [GNU Stow](https://www.gnu.org/software/stow/) is 
    ```sh
    stow .
    ```
+
+## 🛠️ Configured tools
+
+This repository contains configurations for the following tools:
+
+- **Neovim** - Text editor (`~/.config/nvim`)
+- **tmux** - Terminal multiplexer (`~/.config/tmux`)
+- **fish** - Shell (`~/.config/fish`)
+- **Git** - Version control (`~/.gitconfig`)
+- **kitty** - Terminal emulator (`~/.config/kitty`)
+- **starship** - Prompt (`~/.config/starship`)
