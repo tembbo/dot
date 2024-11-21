@@ -30,7 +30,6 @@ return {
             local servers = {
                 "gopls",
                 "lua_ls",
-                "ruff_lsp",
                 "rust_analyzer",
                 "svelte",
                 "tailwindcss",
