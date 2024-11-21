@@ -17,7 +17,6 @@ return {
             json = { "prettier" },
             lua = { "stylua" },
             rust = { "rustfmt" },
-            svelte = { "prettier" },
             toml = { "taplo" },
         },
         format_on_save = {
