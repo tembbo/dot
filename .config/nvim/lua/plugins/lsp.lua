@@ -28,7 +28,6 @@ return {
             local lspconfig = require("lspconfig")
 
             local servers = {
-                "gopls",
                 "lua_ls",
                 "rust_analyzer",
                 "svelte",
