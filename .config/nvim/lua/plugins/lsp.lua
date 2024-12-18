@@ -29,6 +29,7 @@ return {
 
             local servers = {
                 "lua_ls",
+                "ruff",
                 "rust_analyzer",
                 "svelte",
                 "tailwindcss",
