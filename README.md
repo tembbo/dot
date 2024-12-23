@@ -34,4 +34,4 @@ This repository contains configurations for the following tools:
 - **fish** - Shell (`~/.config/fish`)
 - **Git** - Version control (`~/.gitconfig`)
 - **kitty** - Terminal emulator (`~/.config/kitty`)
-- **starship** - Prompt (`~/.config/starship`)
+- **Starship** - Prompt (`~/.config/starship`)
