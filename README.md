@@ -1,6 +1,6 @@
 # ☕ My Dotfiles
 
-A collection of my personal configuration files for the tools I use.
+A collection of my personal configuration files.
 
 > [!WARNING]
 > Don't blindly use my settings unless you know what you're doing.
