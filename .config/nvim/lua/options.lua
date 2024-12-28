@@ -25,7 +25,9 @@ end
 
 vim.g.mapleader = " "
 
-local map = function(keys, func) vim.keymap.set("n", keys, func) end
+local map = function(keys, func)
+    vim.keymap.set("n", keys, func)
+end
 
 map("<esc>", "<cmd>noh<cr><esc>")
 

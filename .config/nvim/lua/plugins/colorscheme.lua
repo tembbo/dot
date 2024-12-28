@@ -1,5 +1,7 @@
 return {
     "catppuccin/nvim",
     name = "catppuccin",
-    init = function() vim.cmd("colorscheme catppuccin") end,
+    init = function()
+        vim.cmd("colorscheme catppuccin")
+    end,
 }

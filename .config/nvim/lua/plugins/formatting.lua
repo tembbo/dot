@@ -5,7 +5,9 @@ return {
     keys = {
         {
             "<leader>p",
-            function() require("conform").format({ async = true, lsp_format = "fallback" }) end,
+            function()
+                require("conform").format({ async = true, lsp_format = "fallback" })
+            end,
         },
     },
     opts = {
