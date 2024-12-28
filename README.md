@@ -35,5 +35,5 @@ This repository contains configurations for the following tools:
 - **tmux** - Terminal multiplexer (`~/.config/tmux`)
 - **fish** - Shell (`~/.config/fish`)
 - **Git** - Version control (`~/.gitconfig`)
-- **kitty** - Terminal emulator (`~/.config/kitty`)
+- **Ghostty** - Terminal emulator (`~/.config/ghostty`)
 - **Starship** - Prompt (`~/.config/starship`)
