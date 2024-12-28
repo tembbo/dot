@@ -4,9 +4,6 @@ return {
         { "-", "<cmd>Oil --float<cr>" },
     },
     opts = {
-        view_options = {
-            show_hidden = true,
-        },
         float = {
             padding = 4,
         },
