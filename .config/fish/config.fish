@@ -1,11 +1,11 @@
-abbr vim nvim
+set -g fish_greeting
 
 fish_vi_key_bindings
 
 alias ls "eza --group-directories-first"
 alias la "eza --group-directories-first --all"
 
-set -g fish_greeting
+abbr vim nvim
 
 eval (/opt/homebrew/bin/brew shellenv)
 
