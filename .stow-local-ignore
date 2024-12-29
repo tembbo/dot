@@ -1,4 +1,4 @@
 \.git
 \.github
 
-^/README.*
+\README.md
