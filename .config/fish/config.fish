@@ -12,6 +12,8 @@ eval (/opt/homebrew/bin/brew shellenv)
 fish_add_path (brew --prefix python)/libexec/bin
 fish_add_path ~/.cargo/bin
 
+tmux attach
+
 starship init fish | source
 set -gx STARSHIP_CONFIG $HOME/.config/starship/starship.toml
 
