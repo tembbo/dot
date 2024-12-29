@@ -1,4 +1,5 @@
-\.git
-\.github
-
-\README.md
+/.git
+/.gitignore
+/.github
+/README.md
+/wallpaper.png
