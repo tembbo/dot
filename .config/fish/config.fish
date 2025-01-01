@@ -5,7 +5,7 @@ fish_vi_key_bindings
 alias ls "eza --group-directories-first"
 alias la "eza --group-directories-first --all"
 
-abbr vim nvim
+alias vim nvim
 
 eval (/opt/homebrew/bin/brew shellenv)
 
