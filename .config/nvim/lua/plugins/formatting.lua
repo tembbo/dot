@@ -19,7 +19,6 @@ return {
             lua = { "stylua" },
             python = { "ruff_format" },
             rust = { "rustfmt" },
-            toml = { "taplo" },
         },
         format_on_save = {
             timeout_ms = 500,
