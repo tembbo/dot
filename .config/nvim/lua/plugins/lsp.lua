@@ -28,6 +28,7 @@ return {
             local lspconfig = require("lspconfig")
 
             local servers = {
+                "cssls",
                 "lua_ls",
                 "ruff",
                 "rust_analyzer",
