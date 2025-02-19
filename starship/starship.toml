@@ -8,6 +8,11 @@ $character"""
 [directory]
 style = "blue"
 
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](purple)"
+vimcmd_symbol = "[❮](green)"
+
 [git_branch]
 format = "[$branch](bright-black)"
 
@@ -22,7 +27,3 @@ deleted = "​"
 
 [python]
 format = "([$virtualenv](yellow) )"
-
-[character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](purple)"
