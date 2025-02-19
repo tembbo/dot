@@ -31,9 +31,9 @@ Before you begin, ensure that [GNU Stow](https://www.gnu.org/software/stow/) is 
 
 This repository contains configurations for the following tools:
 
-- **[Neovim](.config/nvim)** - Text editor
-- **[tmux](.config/tmux)** - Terminal multiplexer
-- **[fish](.config/fish)** - Shell
+- **[Neovim](nvim)** - Text editor
+- **[tmux](tmux)** - Terminal multiplexer
+- **[fish](fish)** - Shell
 - **[Git](.gitconfig)** - Version control
-- **[Ghostty](.config/ghostty)** - Terminal emulator
-- **[Starship](.config/starship)** - Prompt
+- **[Ghostty](ghostty)** - Terminal emulator
+- **[Starship](starship)** - Prompt
