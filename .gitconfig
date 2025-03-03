@@ -1,10 +1,10 @@
 [user]
     name = realguse
-	email = hi@realguse.com
-	signingkey = 637D439501C16F4D
+    email = hi@realguse.com
+    signingkey = 637D439501C16F4D
 
 [core]
-	editor = nvim
+    editor = nvim
 
 [alias]
     s = status -s
@@ -17,7 +17,7 @@
     b = branch
 
 [commit]
-	gpgSign = true
+    gpgSign = true
 
 [tag]
-	gpgSign = true
+    gpgSign = true
