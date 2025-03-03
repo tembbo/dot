@@ -31,3 +31,6 @@
 
 [branch]
     sort = -committerdate
+
+[diff]
+	algorithm = histogram
