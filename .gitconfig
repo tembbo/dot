@@ -34,3 +34,7 @@
 
 [diff]
 	algorithm = histogram
+
+[push]
+	autoSetupRemote = true
+	followTags = true
