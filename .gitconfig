@@ -3,6 +3,9 @@
     email = hi@realguse.com
     signingkey = 637D439501C16F4D
 
+[init]
+	defaultBranch = main
+
 [core]
     editor = nvim
 
