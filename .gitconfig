@@ -21,3 +21,6 @@
 
 [tag]
     gpgSign = true
+
+[branch]
+    sort = -committerdate
