@@ -27,6 +27,9 @@
 [tag]
     gpgSign = true
 
+[pull]
+	rebase = true
+
 [column]
     ui = auto
 
