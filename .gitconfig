@@ -11,7 +11,7 @@
     c = commit
     a = add
     p = push
-    l = log --graph --pretty=format:'%Cred%h%Creset -%C(cyan)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    l = log --graph --decorate --oneline
     k = checkout
     m = switch
     b = branch
