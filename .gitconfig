@@ -27,17 +27,11 @@
 [tag]
     gpgSign = true
 
-[pull]
-	rebase = true
-
-[column]
-    ui = auto
-
 [branch]
     sort = -committerdate
 
-[diff]
-	algorithm = histogram
+[pull]
+	rebase = true
 
 [push]
 	autoSetupRemote = true
@@ -48,11 +42,17 @@
 	pruneTags = true
 	all = true
 
-[rerere]
-	enabled = true
-	autoupdate = true
-
 [rebase]
 	autoSquash = true
 	autoStash = true
 	updateRefs = true
+
+[rerere]
+	enabled = true
+	autoupdate = true
+
+[diff]
+	algorithm = histogram
+
+[column]
+    ui = auto
