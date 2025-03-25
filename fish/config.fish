@@ -9,7 +9,6 @@ set -x GPG_TTY $(tty)
 
 fish_add_path /opt/homebrew/bin
 fish_add_path (brew --prefix python)/libexec/bin
-fish_add_path ~/.cargo/bin
 
 starship init fish | source
 set -gx STARSHIP_CONFIG $HOME/.config/starship/starship.toml
