@@ -44,16 +44,19 @@ return {
                 })
             end
 
-            local signs = {
-                Error = " ",
-                Warn = " ",
-                Hint = " ",
-                Info = " ",
+            local diagnostic_signs = {
+                { name = "DiagnosticSignError", text = " " },
+                { name = "DiagnosticSignWarn", text = " " },
+                { name = "DiagnosticSignHint", text = " " },
+                { name = "DiagnosticSignInfo", text = " " },
             }
 
-            for type, icon in pairs(signs) do
-                local hl = "DiagnosticSign" .. type
-                vim.fn.sign_define(hl, { texthl = hl, text = icon, numhl = "" })
+            for _, sign in ipairs(diagnostic_signs) do
+                vim.fn.sign_define(sign.name, {
+                    text = sign.text,
+                    texthl = sign.name,
+                    numhl = "",
+                })
             end
 
             vim.keymap.set("n", "A", vim.lsp.buf.code_action)
