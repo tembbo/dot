@@ -44,20 +44,17 @@ return {
                 })
             end
 
-            local diagnostic_signs = {
-                { name = "DiagnosticSignError", text = " " },
-                { name = "DiagnosticSignWarn", text = " " },
-                { name = "DiagnosticSignHint", text = " " },
-                { name = "DiagnosticSignInfo", text = " " },
-            }
-
-            for _, sign in ipairs(diagnostic_signs) do
-                vim.fn.sign_define(sign.name, {
-                    text = sign.text,
-                    texthl = sign.name,
-                    numhl = "",
-                })
-            end
+            vim.diagnostic.config({
+                signs = {
+                    text = {
+                        [vim.diagnostic.severity.ERROR] = " ",
+                        [vim.diagnostic.severity.WARN] = " ",
+                        [vim.diagnostic.severity.INFO] = " ",
+                        [vim.diagnostic.severity.HINT] = " ",
+                    },
+                    numhl = {},
+                },
+            })
 
             vim.keymap.set("n", "A", vim.lsp.buf.code_action)
             vim.keymap.set("n", "D", vim.lsp.buf.definition)
