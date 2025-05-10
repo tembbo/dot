@@ -1,7 +1,7 @@
 [user]
     name = realguse
     email = hi@realguse.com
-    signingkey = 637D439501C16F4D
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP9t5MdsE3p8cPHDAkLUYJf+M1BEBDwPfLDtsmJXbSHF
 
 [init]
 	defaultBranch = main
@@ -26,6 +26,12 @@
 
 [tag]
     gpgSign = true
+
+[gpg]
+    format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [branch]
     sort = -committerdate
