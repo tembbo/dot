@@ -1,6 +1,6 @@
 [user]
     name = realguse
-    email = hi@realguse.com
+    email = me@realguse.com
     signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP9t5MdsE3p8cPHDAkLUYJf+M1BEBDwPfLDtsmJXbSHF
 
 [init]
