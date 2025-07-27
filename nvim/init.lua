@@ -18,11 +18,6 @@ require("options")
 
 require("lazy").setup("plugins", {
     install = { colorscheme = { "catppuccin" } },
-    ui = {
-        border = "rounded",
-        backdrop = 100,
-    },
-    change_detection = {
-        notify = false,
-    },
+    ui = { border = "rounded", backdrop = 100 },
+    change_detection = { notify = false },
 })
