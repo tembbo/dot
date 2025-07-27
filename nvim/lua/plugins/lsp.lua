@@ -30,12 +30,12 @@ return {
 
             local servers = {
                 "cssls",
+                "denols",
                 "lua_ls",
                 "ruff",
                 "rust_analyzer",
                 "svelte",
                 "tailwindcss",
-                "ts_ls",
             }
 
             for _, lsp in ipairs(servers) do
