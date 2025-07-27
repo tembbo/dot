@@ -7,8 +7,10 @@ alias vim nvim
 
 set -x GPG_TTY $(tty)
 
-fish_add_path /opt/homebrew/bin
-fish_add_path (brew --prefix python)/libexec/bin
+if command -v brew > /dev/null
+    fish_add_path /opt/homebrew/bin
+    fish_add_path (brew --prefix python)/libexec/bin
+end
 
 starship init fish | source
 set -gx STARSHIP_CONFIG $HOME/.config/starship/starship.toml
