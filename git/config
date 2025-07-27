@@ -30,13 +30,8 @@
 [gpg]
     format = ssh
 
-[includeIf "command:uname | Darwin"]
-    [gpg "ssh"]
-        program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
-
-[includeIf "command:uname | Linux"]
-    [gpg "ssh"]
-	    program = /opt/1Password/op-ssh-sign
+[gpg "ssh"]
+    program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 
 [branch]
     sort = -committerdate
