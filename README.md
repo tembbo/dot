@@ -33,7 +33,7 @@ This repository contains configurations for the following tools:
 
 - **[Neovim](nvim)** - Text editor
 - **[tmux](tmux/tmux.conf)** - Terminal multiplexer
-- **[fish](fish)** - Shell
-- **[Git](.gitconfig)** - Version control
+- **[fish](fish/config.fish)** - Shell
+- **[Git](git/config)** - Version control
 - **[Ghostty](ghostty/config)** - Terminal emulator
 - **[Starship](starship/starship.toml)** - Prompt
