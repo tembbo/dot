@@ -20,11 +20,13 @@
     b = branch
     t = log --tags --decorate --simplify-by-decoration --oneline
 
-[commit]
-    gpgSign = true
-	verbose = true
+[pull]
+	rebase = true
 
-[tag]
+[push]
+	autoSetupRemote = true
+
+[commit]
     gpgSign = true
 
 [gpg]
@@ -32,33 +34,3 @@
 
 [gpg "ssh"]
     program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
-
-[branch]
-    sort = -committerdate
-
-[pull]
-	rebase = true
-
-[push]
-	autoSetupRemote = true
-	followTags = true
-
-[fetch]
-	prune = true
-	pruneTags = true
-	all = true
-
-[rebase]
-	autoSquash = true
-	autoStash = true
-	updateRefs = true
-
-[rerere]
-	enabled = true
-	autoupdate = true
-
-[diff]
-	algorithm = histogram
-
-[column]
-    ui = auto
