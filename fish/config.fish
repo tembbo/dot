@@ -3,7 +3,7 @@ set -g fish_greeting
 alias ls "eza --group-directories-first"
 alias la "eza --group-directories-first --all"
 
-alias vim nvim
+alias vi nvim
 
 set -x GPG_TTY $(tty)
 
