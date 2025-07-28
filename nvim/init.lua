@@ -19,5 +19,6 @@ require("options")
 require("lazy").setup("plugins", {
     install = { colorscheme = { "catppuccin" } },
     ui = { border = "rounded", backdrop = 100 },
+    checker = { enabled = true, notify = false },
     change_detection = { notify = false },
 })
