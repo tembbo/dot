@@ -1,7 +1,7 @@
 local options = {
 	tabstop = 4,
 	shiftwidth = 4,
-	expandtab = true,
+	expandtab = false,
 	autoindent = true,
 
 	number = true,
