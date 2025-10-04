@@ -17,8 +17,6 @@ return {
 			javascript = { "prettier" },
 			json = { "prettier" },
 			lua = { "stylua" },
-			python = { "ruff_format" },
-			rust = { "rustfmt" },
 		},
 		format_on_save = {
 			timeout_ms = 1000,
