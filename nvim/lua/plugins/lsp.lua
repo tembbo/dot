@@ -26,8 +26,6 @@ return {
 				ensure_installed = {
 					"cssls",
 					"lua_ls",
-					"ruff",
-					"rust_analyzer",
 					"svelte",
 					"tailwindcss",
 					"ts_ls",
