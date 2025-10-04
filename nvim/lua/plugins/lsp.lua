@@ -29,6 +29,7 @@ return {
 					"svelte",
 					"tailwindcss",
 					"ts_ls",
+					"zls",
 				},
 
 				automatic_installation = true,
