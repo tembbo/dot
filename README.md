@@ -37,3 +37,4 @@ This repository contains configurations for the following tools:
 - **[Git](git/config)** - Version control
 - **[Ghostty](ghostty/config)** - Terminal emulator
 - **[Starship](starship/starship.toml)** - Prompt
+- **[Atuin](atuin/config.toml)** - Shell history
