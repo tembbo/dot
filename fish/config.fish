@@ -14,4 +14,5 @@ set -gx STARSHIP_CONFIG $HOME/.config/starship/starship.toml
 
 zoxide init --cmd cd fish | source
 
-atuin init fish | source
+atuin init fish | sed "s/-k up/up/g" | source
+atuin init fish | sed "s/-k up/up/g"
