@@ -7,7 +7,7 @@ A collection of my personal configuration files.
 
 ## 🚀 Installation
 
-Before proceeding, ensure that you have [GNU Stow](https://www.gnu.org/software/stow/) installed.
+Before proceeding, make sure to install [GNU Stow](https://www.gnu.org/software/stow/).
 
 1. **Clone the repository**:
 
