@@ -4,6 +4,15 @@ return {
 		build = ":MasonUpdate",
 		dependencies = {
 			"mason-org/mason-lspconfig.nvim",
+			{
+				"WhoIsSethDaniel/mason-tool-installer.nvim",
+				opts = {
+					ensure_installed = {
+						"prettier",
+						"stylua",
+					},
+				},
+			},
 		},
 		config = function()
 			local mason = require("mason")
