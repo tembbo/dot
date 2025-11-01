@@ -5,7 +5,8 @@ return {
 	},
 	opts = {
 		float = {
-			padding = 4,
+			padding = 6,
+			border = "rounded",
 		},
 	},
 }
