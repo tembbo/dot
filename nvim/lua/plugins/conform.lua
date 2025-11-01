@@ -17,6 +17,7 @@ return {
 			javascript = { "prettier" },
 			json = { "prettier" },
 			lua = { "stylua" },
+			svelte = { "prettier" },
 		},
 		format_on_save = {
 			timeout_ms = 1000,
