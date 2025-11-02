@@ -10,7 +10,7 @@ A collection of my personal configuration files.
 Before proceeding, make sure to install [GNU Stow](https://www.gnu.org/software/stow/).
 
 ```sh
-git clone https://github.com/realguse/dot.git ~/.dot
+git clone https://github.com/realguse/dot ~/.dot
 cd ~/.dot
 stow .
 ```
