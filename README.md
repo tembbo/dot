@@ -5,7 +5,7 @@ A collection of my personal configuration files.
 > [!WARNING]
 > Don't blindly use my configurations unless you know what you're doing.
 
-## 🚀 Installation
+## Install
 
 Before proceeding, make sure to install [GNU Stow](https://www.gnu.org/software/stow/).
 
@@ -27,7 +27,7 @@ Before proceeding, make sure to install [GNU Stow](https://www.gnu.org/software/
    stow .
    ```
 
-## 🛠️ Configured tools
+## Tools
 
 This repository contains configurations for the following tools:
 
