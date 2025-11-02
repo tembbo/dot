@@ -2,8 +2,8 @@
 
 A collection of my personal configuration files.
 
-> [!WARNING]
-> Don't blindly use my configurations unless you know what you're doing.
+> [!IMPORTANT]
+> Don't blindly copy these unless you know what you're doing.
 
 ## Install
 
