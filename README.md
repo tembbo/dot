@@ -9,23 +9,11 @@ A collection of my personal configuration files.
 
 Before proceeding, make sure to install [GNU Stow](https://www.gnu.org/software/stow/).
 
-1. **Clone the repository**:
-
-   ```sh
-   git clone https://github.com/realguse/dot.git ~/.dot
-   ```
-
-2. **Navigate into the cloned directory**:
-
-   ```sh
-   cd ~/.dot
-   ```
-
-3. **Apply the configuration**:
-
-   ```sh
-   stow .
-   ```
+```bash
+git clone https://github.com/realguse/dot.git ~/.dot
+cd .dot
+stow .
+```
 
 ## Configured Tools
 
