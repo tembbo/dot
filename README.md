@@ -11,7 +11,7 @@ Before proceeding, make sure to install [GNU Stow](https://www.gnu.org/software/
 
 ```sh
 git clone https://github.com/realguse/dot.git ~/.dot
-cd .dot
+cd ~/.dot
 stow .
 ```
 
