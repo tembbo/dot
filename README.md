@@ -27,7 +27,7 @@ Before proceeding, make sure to install [GNU Stow](https://www.gnu.org/software/
    stow .
    ```
 
-## Tools
+## Configured Tools
 
 This repository contains configurations for the following tools:
 
