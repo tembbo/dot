@@ -5,7 +5,7 @@ A collection of my personal configuration files.
 > [!IMPORTANT]
 > Don't blindly copy these unless you know what you're doing.
 
-## Install
+## Setup
 
 Before proceeding, make sure to install [GNU Stow](https://www.gnu.org/software/stow/).
 
