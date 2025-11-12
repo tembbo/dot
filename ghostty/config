@@ -1,6 +1,8 @@
 theme = Catppuccin Mocha
 font-size = 14
 
+shell-integration = fish
+
 keybind = ctrl+h=new_split:left
 keybind = ctrl+j=new_split:down
 keybind = ctrl+k=new_split:up
