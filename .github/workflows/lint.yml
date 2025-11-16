@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  lint:
+  lua:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,3 +18,15 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
           args: --check .
+
+  toml:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Install taplo
+        uses: uncenter/setup-taplo@v1
+
+      - name: Lint
+        run: taplo lint
