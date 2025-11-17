@@ -23,7 +23,7 @@ for key, value in pairs(options) do
 	vim.opt[key] = value
 end
 
-vim.g.mapleader = ";"
+vim.g.mapleader = ","
 
 local map = function(keys, func)
 	vim.keymap.set("n", keys, func)
