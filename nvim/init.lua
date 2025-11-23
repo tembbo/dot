@@ -1,8 +1,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.g.have_nerd_font = true
-
 vim.o.number = true
 vim.o.mouse = "a"
 
@@ -12,6 +10,9 @@ vim.schedule(function()
 	vim.o.clipboard = "unnamedplus"
 end)
 
+vim.otabstop = 4
+vim.oshiftwidth = 4
+vim.oexpandtab = false
 vim.o.breakindent = true
 
 vim.o.undofile = true
@@ -50,7 +51,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	"NMAC427/guess-indent.nvim",
 	{
 		"lewis6991/gitsigns.nvim",
 		opts = {
