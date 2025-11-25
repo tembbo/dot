@@ -1,4 +1,4 @@
-# My Dotfiles
+# ☕ My Dotfiles
 
 A collection of my personal configuration files.
 
