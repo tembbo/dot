@@ -1,0 +1,12 @@
+[submodule "tmux/plugins/catppuccin"]
+	path = tmux/plugins/catppuccin
+	url = https://github.com/catppuccin/tmux.git
+[submodule "tmux/plugins/tmux-resurrect"]
+	path = tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect.git
+[submodule "tmux/plugins/tmux-sensible"]
+	path = tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible.git
+[submodule "tmux/plugins/vim-tmux-navigator"]
+	path = tmux/plugins/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
