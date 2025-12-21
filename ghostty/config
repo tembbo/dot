@@ -1,5 +1,4 @@
 theme = Catppuccin Mocha
-font-size = 14
 
 keybind = cmd+h=new_split:left
 keybind = cmd+j=new_split:down
