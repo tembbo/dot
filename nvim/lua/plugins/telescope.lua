@@ -1,6 +1,6 @@
 return {
 	"nvim-telescope/telescope.nvim",
-	event = "VimEnter",
+	event = { "VimEnter" },
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-tree/nvim-web-devicons",
@@ -8,7 +8,7 @@ return {
 			"nvim-telescope/telescope-fzf-native.nvim",
 			build = "make",
 		},
-		{ "nvim-telescope/telescope-ui-select.nvim" },
+		"nvim-telescope/telescope-ui-select.nvim",
 	},
 	config = function()
 		require("telescope").setup({
