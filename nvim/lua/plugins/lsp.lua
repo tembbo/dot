@@ -7,6 +7,7 @@ return {
 		{ "j-hui/fidget.nvim", opts = {} },
 		"saghen/blink.cmp",
 	},
+	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
