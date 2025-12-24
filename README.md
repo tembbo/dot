@@ -15,7 +15,7 @@ cd .dot
 stow .
 ```
 
-## Configured Tools
+## Configured tools
 
 This repository contains configurations for the following tools:
 
