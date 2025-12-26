@@ -26,3 +26,4 @@ This repository contains configurations for the following tools:
 - **[Ghostty](ghostty/config)** - Terminal emulator
 - **[Starship](starship/starship.toml)** - Prompt
 - **[Atuin](atuin/config.toml)** - Shell history
+- **[OpenCode](opencode/opencode.json)** - Code editor
