@@ -1,4 +1,5 @@
 theme = Catppuccin Mocha
+confirm-close-surface = false
 
 keybind = cmd+h=new_split:left
 keybind = cmd+j=new_split:down
