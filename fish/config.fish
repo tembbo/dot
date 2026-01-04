@@ -10,3 +10,5 @@ alias vim nvim
 set -e fish_user_paths
 fish_add_path /opt/homebrew/bin
 fish_add_path ~/.bun/bin
+
+set -x GPG_TTY (tty)
