@@ -3,7 +3,7 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
-$custom.jj\
+$custom.jj \
 $character"""
 
 [directory]
