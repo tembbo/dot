@@ -3,6 +3,7 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
+$custom.jj\
 $character"""
 
 [directory]
@@ -29,3 +30,8 @@ deleted = "​"
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
 style = "bright-black"
+
+[custom.jj]
+when = "jj-starship detect"
+shell = ["jj-starship"]
+format = "$output "
