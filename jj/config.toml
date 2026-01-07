@@ -4,6 +4,9 @@
 name = "realguse"
 email = "me@realguse.com"
 
+[ui]
+default-command = "log"
+
 [signing]
 behavior = "own"
 backend = "gpg"
