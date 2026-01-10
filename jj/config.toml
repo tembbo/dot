@@ -4,6 +4,9 @@
 name = "realguse"
 email = "me@realguse.com"
 
+[aliases]
+tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@-"]
+
 [ui]
 default-command = "status"
 
