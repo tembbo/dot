@@ -5,7 +5,7 @@ name = "realguse"
 email = "me@realguse.com"
 
 [ui]
-default-command = "log"
+default-command = "status"
 
 [signing]
 behavior = "own"
