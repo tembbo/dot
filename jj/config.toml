@@ -8,6 +8,7 @@ email = "me@realguse.com"
 tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@-"]
 
 [ui]
+editor = "nvim"
 diff-editor = ":builtin"
 default-command = "log"
 
