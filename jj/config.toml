@@ -4,15 +4,6 @@
 name = "realguse"
 email = "me@realguse.com"
 
-[aliases]
-tug = ["util", "exec", "--", "sh", "-c", """
-  if [ -n "$1" ]; then
-    jj bookmark move "$1" --to 'closest_pushable(@)'
-  else
-    jj bookmark move --from 'closest_bookmark(@)' --to 'closest_pushable(@)'
-  fi
-""", "sh"]
-
 [ui]
 editor = "nvim"
 diff-editor = ":builtin"
@@ -24,3 +15,12 @@ backend = "gpg"
 
 [git]
 sign-on-push = true
+
+[aliases]
+tug = ["util", "exec", "--", "sh", "-c", """
+  if [ -n "$1" ]; then
+    jj bookmark move "$1" --to 'closest_pushable(@)'
+  else
+    jj bookmark move --from 'closest_bookmark(@)' --to 'closest_pushable(@)'
+  fi
+""", "sh"]
