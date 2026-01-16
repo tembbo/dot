@@ -8,8 +8,8 @@ email = "me@realguse.com"
 tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@-"]
 
 [ui]
-default-command = "status"
 diff-editor = ":builtin"
+default-command = "log"
 
 [signing]
 behavior = "own"
