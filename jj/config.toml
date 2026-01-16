@@ -9,6 +9,7 @@ tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@-"]
 
 [ui]
 default-command = "status"
+diff-editor = ":builtin"
 
 [signing]
 behavior = "own"
