@@ -18,6 +18,7 @@ return {
 			}
 		end,
 		formatters_by_ft = {
+			astro = { "prettier" },
 			c = { "clang-format" },
 			lua = { "stylua" },
 			html = { "prettier" },
