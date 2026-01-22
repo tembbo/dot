@@ -74,6 +74,7 @@ return {
 		local servers = {
 			clangd = {},
 			zls = {},
+			astro = {},
 			-- gopls = {},
 			-- pyright = {},
 			-- rust_analyzer = {},
