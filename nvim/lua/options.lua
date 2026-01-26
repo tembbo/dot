@@ -1,22 +1,28 @@
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = false
-vim.opt.breakindent = true
+local options = {
+	tabstop = 4,
+	shiftwidth = 4,
+	expandtab = false,
+	breakindent = true,
 
-vim.opt.cursorline = true
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.scrolloff = 10
-vim.opt.showmode = false
-vim.opt.signcolumn = "yes"
-vim.opt.title = true
-vim.opt.wrap = false
+	cursorline = true,
+	number = true,
+	relativenumber = true,
+	scrolloff = 10,
+	showmode = false,
+	signcolumn = "yes",
+	title = true,
+	wrap = false,
 
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+	ignorecase = true,
+	smartcase = true,
 
-vim.opt.clipboard = "unnamedplus"
-vim.opt.confirm = true
-vim.opt.undofile = true
-vim.opt.updatetime = 250
-vim.opt.timeoutlen = 300
+	clipboard = "unnamedplus",
+	confirm = true,
+	undofile = true,
+	updatetime = 250,
+	timeoutlen = 300,
+}
+
+for option, value in pairs(options) do
+	vim.opt[option] = value
+end
