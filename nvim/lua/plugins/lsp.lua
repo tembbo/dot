@@ -75,6 +75,7 @@ return {
 			clangd = {},
 			zls = {},
 			astro = {},
+			tailwindcss = {},
 			-- gopls = {},
 			-- pyright = {},
 			-- rust_analyzer = {},
