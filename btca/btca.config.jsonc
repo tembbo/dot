@@ -29,6 +29,13 @@
       "name": "convex",
       "url": "https://github.com/get-convex/convex-js",
       "branch": "main"
+    },
+	{
+  	  "type": "git",
+      "name": "zod",
+      "url": "https://github.com/colinhacks/zod",
+      "branch": "main",
+      "searchPath": "packages/docs/content"
     }
   ],
 }
