@@ -1,17 +1,15 @@
 {
   "$schema": "https://btca.dev/btca.schema.json",
-  "model": "glm-4.7-free",
-  "provider": "opencode",
   "resources": [
     {
       "type": "git",
       "name": "svelte",
       "url": "https://github.com/sveltejs/svelte.dev",
       "branch": "main",
-      "searchPath": "apps/svelte.dev",
+      "searchPath": "apps/svelte.dev"
     },
-	{
-  	  "type": "git",
+    {
+      "type": "git",
       "name": "svelteKit",
       "url": "https://github.com/sveltejs/kit",
       "branch": "main",
@@ -22,7 +20,7 @@
       "name": "tailwindcss",
       "url": "https://github.com/tailwindlabs/tailwindcss.com",
       "branch": "main",
-      "searchPath": "src/docs",
+      "searchPath": "src/docs"
     },
     {
       "type": "git",
@@ -30,12 +28,21 @@
       "url": "https://github.com/get-convex/convex-js",
       "branch": "main"
     },
-	{
-  	  "type": "git",
+    {
+      "type": "git",
       "name": "zod",
       "url": "https://github.com/colinhacks/zod",
       "branch": "main",
       "searchPath": "packages/docs/content"
+    },
+    {
+      "type": "git",
+      "name": "astro",
+      "url": "https://github.com/withastro/docs",
+      "branch": "main",
+	  "searchPath": "docs/src/content/docs/en"
     }
   ],
+  "model": "glm-4.7-free",
+  "provider": "opencode"
 }
