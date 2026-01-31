@@ -32,6 +32,6 @@
       "branch": "main"
     }
   ],
-  "model": "claude-haiku-4-5",
+  "model": "glm-4.7-free",
   "provider": "opencode"
 }
