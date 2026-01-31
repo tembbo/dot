@@ -2,20 +2,20 @@
   "$schema": "https://btca.dev/btca.schema.json",
   "resources": [
     {
-      "name": "svelte",
-      "specialNotes": "This is the svelte docs website repo, not the actual svelte repo. Focus on the content directory, it has all the markdown files for the docs.",
       "type": "git",
+      "name": "svelte",
       "url": "https://github.com/sveltejs/svelte.dev",
       "branch": "main",
-      "searchPath": "apps/svelte.dev"
+      "searchPath": "apps/svelte.dev",
+      "specialNotes": "This is the svelte docs website repo, not the actual svelte repo. Focus on the content directory, it has all the markdown files for the docs."
     },
     {
-      "name": "tailwindcss",
-      "specialNotes": "This is the tailwindcss docs website repo, not the actual tailwindcss repo. Use the docs to answer questions about tailwindcss.",
       "type": "git",
+      "name": "tailwindcss",
       "url": "https://github.com/tailwindlabs/tailwindcss.com",
+      "branch": "main",
       "searchPath": "src/docs",
-      "branch": "main"
+      "specialNotes": "This is the tailwindcss docs website repo, not the actual tailwindcss repo. Use the docs to answer questions about tailwindcss."
     },
     {
       "type": "git",
@@ -24,9 +24,14 @@
       "branch": "canary",
       "searchPath": "docs",
       "specialNotes": "These are the docs for the next.js framework, not the actual next.js repo. Use the docs to answer questions about next.js."
+    },
+    {
+      "type": "git",
+      "name": "convex",
+      "url": "https://github.com/get-convex/convex-js",
+      "branch": "main"
     }
   ],
   "model": "claude-haiku-4-5",
-  "provider": "opencode",
-  "providerTimeoutMs": 300000
+  "provider": "opencode"
 }
