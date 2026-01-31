@@ -10,6 +10,13 @@
       "branch": "main",
       "searchPath": "apps/svelte.dev",
     },
+	{
+  	  "type": "git",
+      "name": "svelteKit",
+      "url": "https://github.com/sveltejs/kit",
+      "branch": "main",
+      "searchPath": "documentation"
+    },
     {
       "type": "git",
       "name": "tailwindcss",
