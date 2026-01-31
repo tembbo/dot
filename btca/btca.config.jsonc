@@ -9,7 +9,6 @@
       "url": "https://github.com/sveltejs/svelte.dev",
       "branch": "main",
       "searchPath": "apps/svelte.dev",
-      "specialNotes": "This is the svelte docs website repo, not the actual svelte repo. Focus on the content directory, it has all the markdown files for the docs."
     },
     {
       "type": "git",
@@ -17,7 +16,6 @@
       "url": "https://github.com/tailwindlabs/tailwindcss.com",
       "branch": "main",
       "searchPath": "src/docs",
-      "specialNotes": "This is the tailwindcss docs website repo, not the actual tailwindcss repo. Use the docs to answer questions about tailwindcss."
     },
     {
       "type": "git",
