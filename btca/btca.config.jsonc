@@ -21,14 +21,6 @@
     },
     {
       "type": "git",
-      "name": "nextjs",
-      "url": "https://github.com/vercel/next.js",
-      "branch": "canary",
-      "searchPath": "docs",
-      "specialNotes": "These are the docs for the next.js framework, not the actual next.js repo. Use the docs to answer questions about next.js."
-    },
-    {
-      "type": "git",
       "name": "convex",
       "url": "https://github.com/get-convex/convex-js",
       "branch": "main"
