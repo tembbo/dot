@@ -1,5 +1,7 @@
 theme = Catppuccin Mocha
 
+auto-update-channel = tip
+
 keybind = cmd+h=new_split:left
 keybind = cmd+j=new_split:down
 keybind = cmd+k=new_split:up
