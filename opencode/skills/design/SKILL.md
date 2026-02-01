@@ -3,7 +3,7 @@ name: design
 description: Create distinctive, production-grade frontend interfaces. Use when building web components, pages, or applications with React-based frameworks. Includes Tailwind CSS v4, shadcn/ui components, Motion animations, and visual design philosophy for avoiding generic AI aesthetics.
 ---
 
-# Frontend Design
+# Design
 
 Create distinctive, production-grade interfaces avoiding generic "AI slop" aesthetics.
 
