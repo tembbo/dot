@@ -76,6 +76,7 @@ return {
 			zls = {},
 			astro = {},
 			tailwindcss = {},
+			fish_lsp = {},
 			-- gopls = {},
 			-- pyright = {},
 			-- rust_analyzer = {},
