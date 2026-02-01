@@ -6,6 +6,7 @@ set -gx EDITOR (which nvim)
 alias ls "eza --group-directories-first"
 alias la "eza --group-directories-first --all"
 alias vim nvim
+alias oc opencode
 
 set -e fish_user_paths
 fish_add_path /opt/homebrew/bin
