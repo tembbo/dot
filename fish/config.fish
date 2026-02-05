@@ -11,5 +11,6 @@ alias oc opencode
 set -e fish_user_paths
 fish_add_path /opt/homebrew/bin
 fish_add_path ~/.bun/bin
+fish_add_path ~/.local/bin
 
 set -x GPG_TTY (tty)
