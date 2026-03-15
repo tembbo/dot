@@ -1,7 +1,6 @@
 theme = Catppuccin Mocha
 
 auto-update-channel = tip
-
 macos-option-as-alt = true
 
 keybind = cmd+h=new_split:left
