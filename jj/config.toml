@@ -1,20 +1,16 @@
 #:schema https://docs.jj-vcs.dev/latest/config-schema.json
 
 [user]
-name = "oatm1l"
-email = "m@oatm1l.com"
+name = "tembbo"
+email = "m@tembbo.com"
 
 [ui]
 editor = "nvim"
-diff-editor = ":builtin"
 default-command = "log"
 
 [signing]
 behavior = "own"
 backend = "gpg"
-
-[git]
-sign-on-push = true
 
 [aliases]
 tug = ["util", "exec", "--", "sh", "-c", """

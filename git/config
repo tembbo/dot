@@ -1,7 +1,18 @@
 [user]
-    name = oatm1l
-    email = m@oatm1l.com
-	signingkey = 033DCD36EAC1245D6C3F257C0755A028C285E53E
+    name = tembbo
+    email = m@tembbo.com
+	signingkey = 0755A028C285E53E
+
+[alias]
+	s = status
+	c = commit
+	a = add
+	p = push
+	l = log --graph --decorate --oneline
+	k = checkout
+	m = switch
+	b = branch
+	t = log --tags --decorate --simplify-by-decoration --oneline
 
 [init]
 	defaultBranch = main
