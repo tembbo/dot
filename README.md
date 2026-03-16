@@ -1,6 +1,6 @@
 # My Dotfiles
 
-This repository isn't meant to be a turnkey solution to copying my setup. I've tried to keep things relatively simple, but if you wish to copy from this, you'll likely need to tweak some things to fit your own needs.
+This repository isn't meant to be a turnkey solution to copying my setup. I've tried to keep things relatively simple, but if you wish to copy from this, you'll likely need to tweak some things to fit your own machine.
 
 ## Setup
 
