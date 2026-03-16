@@ -1,16 +1,20 @@
 # My Dotfiles
 
-A collection of my personal configuration files.
-
-> [!IMPORTANT]
-> Don't blindly copy these unless you know what you're doing.
+This repository isn't meant to be a turnkey solution to copying my setup. I've tried to keep things relatively simple, but if you wish to copy from this, you'll likely need to tweak some things to fit your own needs.
 
 ## Setup
 
 Before proceeding, make sure you have [GNU Stow](https://www.gnu.org/software/stow/) installed.
 
+Clone the repository into a folder in your home directory:
+
 ```sh
 git clone https://github.com/realguse/dot .dot
 cd .dot
+```
+
+Use stow to create the symlinks:
+
+```sh
 stow .
 ```
