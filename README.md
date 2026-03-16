@@ -9,11 +9,11 @@ Before proceeding, make sure you have [GNU Stow](https://www.gnu.org/software/st
 Clone the repository into a folder in your home directory:
 
 ```sh
-git clone https://github.com/realguse/dot .dot
+git clone https://github.com/tembbo/dot .dot
 cd .dot
 ```
 
-Use stow to create the symlinks:
+Then use stow to create the symlinks:
 
 ```sh
 stow .
