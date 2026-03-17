@@ -6,6 +6,14 @@ return {
 		"rafamadriz/friendly-snippets",
 	},
 	opts = {
+		keymap = {
+			preset = "none",
+			["<C-e>"] = { "hide" },
+			["<CR>"] = { "accept", "fallback" },
+			["<Tab>"] = { "accept", "fallback" },
+			["<C-j>"] = { "select_next", "fallback" },
+			["<C-k>"] = { "select_prev", "fallback" },
+		},
 		appearance = {
 			nerd_font_variant = "mono",
 		},
