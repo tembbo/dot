@@ -23,13 +23,12 @@ return {
 				auto_show_delay_ms = 0,
 			},
 		},
-		keymap = {
-			preset = "default",
-		},
 		sources = {
-			default = { "lsp", "path", "snippets", "buffer" },
+			default = { "lsp", "path", "snippets", "buffer", "lazydev" },
+			providers = {
+				lazydev = { module = "lazydev.integrations.blink", score_offset = 100 },
+			},
 		},
-		fuzzy = { implementation = "prefer_rust_with_warning" },
+		fuzzy = { implementation = "prefer_rust" },
 	},
-	opts_extend = { "sources.default" },
 }
