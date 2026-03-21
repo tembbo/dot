@@ -6,6 +6,7 @@ return {
 		require("nvim-treesitter.install").update({ with_sync = true })
 	end,
 	config = function()
+		---@diagnostic disable: missing-fields
 		require("nvim-treesitter.configs").setup({
 			ensure_installed = {
 				"bash",
@@ -14,7 +15,6 @@ return {
 				"javascript",
 				"json",
 				"lua",
-				"luadoc",
 				"markdown",
 				"markdown_inline",
 				"svelte",
