@@ -1,24 +1,19 @@
 return {
-	{
-
-		"folke/lazydev.nvim",
-		ft = "lua",
-		opts = {
-			library = {
-				{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
-			},
-		},
-	},
 	"neovim/nvim-lspconfig",
-	event = { "BufReadPost" },
-	cmd = { "LspInfo", "LspInstall", "LspUninstall", "Mason" },
 	dependencies = {
-		"mason-org/mason.nvim",
+		{ "mason-org/mason.nvim", opts = {} },
 		"mason-org/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
-		"hrsh7th/cmp-nvim-lsp",
-		{ "j-hui/fidget.nvim" },
-		{},
+		{ "j-hui/fidget.nvim", opts = {} },
+		{
+			"folke/lazydev.nvim",
+			ft = "lua",
+			opts = {
+				library = {
+					{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
+				},
+			},
+		},
 	},
 	config = function()
 		vim.api.nvim_create_autocmd("LspAttach", {
@@ -127,5 +122,4 @@ return {
 			},
 		})
 	end,
-	{},
 }
