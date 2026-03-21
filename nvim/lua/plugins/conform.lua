@@ -22,15 +22,8 @@ return {
 			}
 		end,
 		formatters_by_ft = {
-			css = { "prettier" },
-			astro = { "prettier" },
-			c = { "clang-format" },
+			javascript = { "oxfmt" },
 			lua = { "stylua" },
-			html = { "prettier" },
-			javascript = { "prettier" },
-			json = { "prettier" },
-			markdown = { "prettier" },
-			zig = { "zls" },
 		},
 	},
 }
