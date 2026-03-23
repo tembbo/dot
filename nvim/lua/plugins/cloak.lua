@@ -1,6 +1,7 @@
 return {
 	{
 		"laytan/cloak.nvim",
+		enabled = false,
 		config = function()
 			require("cloak").setup({
 				patterns = {
