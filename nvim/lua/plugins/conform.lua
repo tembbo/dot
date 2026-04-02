@@ -23,6 +23,8 @@ return {
 		end,
 		formatters_by_ft = {
 			javascript = { "oxfmt" },
+			typescript = { "oxfmt" },
+			typescriptreact = { "oxfmt" },
 			json = { "oxfmt" },
 			lua = { "stylua" },
 		},
