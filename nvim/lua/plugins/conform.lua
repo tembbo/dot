@@ -27,6 +27,7 @@ return {
 			lua = { "stylua" },
 			sh = { "shfmt" },
 			bash = { "shfmt" },
+			astro = { "prettier" },
 		},
 		format_on_save = function()
 			return {
