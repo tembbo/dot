@@ -2,3 +2,4 @@ theme = vesper
 shell-integration = fish
 auto-update-channel = tip
 macos-option-as-alt = true
+confirm-close-surface = false

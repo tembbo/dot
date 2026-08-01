@@ -1,4 +1,5 @@
-.DS_Store
+node_modules/
+
 fish/fish_variables
 
 pi/auth.json
@@ -6,3 +7,12 @@ pi/settings.json
 pi/trust.json
 pi/sessions/
 pi/bin/
+pi/models.json
+pi/models-store.json
+pi/workflows/
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
