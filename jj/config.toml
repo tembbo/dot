@@ -1,26 +1,18 @@
 #:schema https://docs.jj-vcs.dev/latest/config-schema.json
 
 [user]
-name = "tembbo"
 email = "m@tembbo.com"
-
-[ui]
-editor = "nvim"
-default-command = "log"
+name = "tembbo"
 
 [signing]
-behavior = "own"
 backend = "gpg"
+behavior = "own"
 
 [aliases]
-tug = ["util", "exec", "--", "sh", "-c", """
-  if [ -n "$1" ]; then
-    jj bookmark move "$1" --to 'closest_pushable(@)'
-  else
-    jj bookmark move --from 'closest_bookmark(@)' --to 'closest_pushable(@)'
-  fi
-""", "sh"]
+tug = ["bookmark", "move", "--from", "closest_bookmark(@-)", "--to", "@-"]
 
 [revset-aliases]
-'closest_pushable(to)' = 'heads(::to & mutable() & ~description(exact:"") & (~empty() | merges()))'
 'closest_bookmark(to)' = 'heads(::to & bookmarks())'
+
+[ui]
+default-command = "log"
