@@ -14,13 +14,12 @@ log() { echo -e "${BLUE}[*]${NC} $1"; }
 success() { echo -e "${GREEN}[✓]${NC} $1"; }
 warn() { echo -e "${YELLOW}[!]${NC} $1"; }
 error() {
-	echo -e "${RED}[✗]${NC} $1" >&2
+	echo -e "${RED}[✗]${NC} $1"
 	exit 1
 }
 
-if [[ "$(uname)" != "Darwin" ]]; then
-	error "This script only works on macOS"
-fi
+[[ "$(uname)" != "Darwin" ]] || error "This script only works on macOS"
+[[ "$(uname -m)" != "arm64" ]] || warn "This is primarily meant for Apple Silicon (arm64), you're on $(uname -m)"
 
 if test ! $(which brew); then
 	log "Installing Homebrew..."
