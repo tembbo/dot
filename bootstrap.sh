@@ -42,7 +42,6 @@ fi
 if [[ -d "$DOTS_DIR/.git" ]]; then
 	log "Updating dotfiles..."
 	git -C "$DOTS_DIR" pull --ff-only
-	log "Dotfiles up to date"
 else
 	log "Cloning dotfiles..."
 	git clone "$REPO" "$DOTS_DIR"
