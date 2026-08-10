@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DOTS_DIR="$HOME/.dots"
-REPO="https://github.com/tembbo/dots.git"
-
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -21,7 +18,7 @@ error() {
 [[ "$(uname)" == "Darwin" ]] || error "This script only works on macOS"
 [[ "$(uname -m)" == "arm64" ]] || warn "This is primarily meant for Apple Silicon (arm64), you're on $(uname -m)"
 
-if test ! $(which brew); then
+if ! command -v brew &>/dev/null; then
 	log "Installing Homebrew..."
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	success "Homebrew installed"
@@ -30,7 +27,7 @@ else
 fi
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-if test ! $(which stow); then
+if ! command -v stow &>/dev/null; then
 	log "Installing stow..."
 	brew install stow
 	success "stow installed"
@@ -38,12 +35,15 @@ else
 	success "stow already installed"
 fi
 
+DOTS_DIR="$HOME/.dots"
 if [[ -d "$DOTS_DIR/.git" ]]; then
+	success "Dotfiles already at $DOTS_DIR"
 	log "Updating dotfiles..."
 	git -C "$DOTS_DIR" pull --ff-only
 else
 	log "Cloning dotfiles..."
-	git clone "$REPO" "$DOTS_DIR"
+	git clone https://github.com/tembbo/dots.git "$DOTS_DIR"
+	success "Dotfiles cloned to $DOTS_DIR"
 fi
 
 mkdir -p "$HOME/.config"
