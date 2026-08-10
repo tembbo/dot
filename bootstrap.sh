@@ -39,7 +39,6 @@ else
 	success "stow already installed"
 fi
 
-# ── dotfiles ───────────────────────────────────────────────────────────────
 if [[ -d "$DOTS_DIR/.git" ]]; then
 	log "Updating dotfiles..."
 	git -C "$DOTS_DIR" pull --ff-only
