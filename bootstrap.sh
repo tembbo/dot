@@ -18,7 +18,7 @@ error() {
 	exit 1
 }
 
-if [[ "$(uname)" == "Darwin" ]]; then
+if [[ "$(uname)" != "Darwin" ]]; then
 	error "This script only works on macOS"
 fi
 
@@ -29,7 +29,7 @@ if test ! $(which brew); then
 else
 	success "Homebrew already installed"
 fi
-eval "$(/opt/homebrew/bin/brew shellenv fish)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 if test ! $(which stow); then
 	log "Installing stow..."
@@ -40,29 +40,20 @@ else
 fi
 
 # ── dotfiles ───────────────────────────────────────────────────────────────
-FIRST_RUN=false
 if [[ -d "$DOTS_DIR/.git" ]]; then
 	log "Updating dotfiles..."
 	git -C "$DOTS_DIR" pull --ff-only
-	success "Dotfiles up to date"
+	log "Dotfiles up to date"
 else
 	log "Cloning dotfiles..."
 	git clone "$REPO" "$DOTS_DIR"
-	FIRST_RUN=true
-	success "Dotfiles cloned from $REPO"
 fi
 
 mkdir -p "$HOME/.config"
 cd "$DOTS_DIR"
 
-# ── link dotfiles ──────────────────────────────────────────────────────────
-if $FIRST_RUN; then
-	log "Linking dotfiles..."
-	stow .
-else
-	log "Restowing dotfiles..."
-	stow --restow .
-fi
-success "Dotfiles linked into ~/.config"
+log "Linking dotfiles..."
+stow --restow .
+success "Dotfiles linked"
 
 success "Bootstrap complete!"
