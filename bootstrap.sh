@@ -18,8 +18,8 @@ error() {
 	exit 1
 }
 
-[[ "$(uname)" != "Darwin" ]] || error "This script only works on macOS"
-[[ "$(uname -m)" != "arm64" ]] || warn "This is primarily meant for Apple Silicon (arm64), you're on $(uname -m)"
+[[ "$(uname)" == "Darwin" ]] || error "This script only works on macOS"
+[[ "$(uname -m)" == "arm64" ]] || warn "This is primarily meant for Apple Silicon (arm64), you're on $(uname -m)"
 
 if test ! $(which brew); then
 	log "Installing Homebrew..."
