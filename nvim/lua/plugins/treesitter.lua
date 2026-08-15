@@ -1,49 +1,25 @@
+-- ============================================================================
+-- FILE: ~/.config/nvim/lua/plugins/treesitter.lua
+-- ============================================================================
 return {
-	{
-		"nvim-treesitter/nvim-treesitter",
-		branch = "main",
-		version = false,
-		build = ":TSUpdate",
-		event = { "BufReadPost", "BufNewFile" },
-		cmd = { "TSUpdate", "TSInstall", "TSLog", "TSUninstall" },
-		opts = {
-			ensure_installed = {
-				"bash",
-				"css",
-				"html",
-				"javascript",
-				"typescript",
-				"json",
-				"lua",
-				"markdown",
-				"markdown_inline",
-				"query",
-				"svelte",
-				"vim",
-				"vimdoc",
-				"zig",
-			},
+	"nvim-treesitter/nvim-treesitter",
+	build = ":TSUpdate",
+	config = function()
+		local status_ok, configs = pcall(require, "nvim-treesitter.configs")
+		if not status_ok then
+			return
+		end
+
+		configs.setup({
+			ensure_installed = { "lua", "python", "javascript", "html", "css", "java" },
+			sync_install = false,
 			auto_install = true,
-		},
-		config = function(_, opts)
-			local ts = require("nvim-treesitter")
-			ts.setup(opts)
-
-			vim.api.nvim_create_autocmd("FileType", {
-				group = vim.api.nvim_create_augroup("my_treesitter_start", {
-					clear = true,
-				}),
-				callback = function(ev)
-					pcall(vim.treesitter.start, ev.buf)
-					vim.bo[ev.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-				end,
-			})
-		end,
-	},
-
-	{
-		"windwp/nvim-ts-autotag",
-		event = { "BufReadPost", "BufNewFile" },
-		opts = {},
-	},
+			highlight = {
+				enable = true,
+			},
+			indent = {
+				enable = true,
+			},
+		})
+	end,
 }
