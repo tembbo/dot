@@ -14,6 +14,7 @@ fish_add_path /opt/homebrew/sbin
 fish_add_path ~/.bun/bin
 fish_add_path ~/.local/bin
 fish_add_path ~/.local/bin/zig-aarch64-macos-0.16.0
+fish_add_path ~/.opencode/bin
 # fish_add_path ~/.local/bin/zig-aarch64-macos-0.17.0-dev.44+0177cb57c
 
 set -x GPG_TTY (tty)
