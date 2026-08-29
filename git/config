@@ -1,7 +1,7 @@
 [user]
 	name = tembbo
 	email = m@tembbo.com
-	signingkey = 0755A028C285E53E
+	signingkey = E8D8EE15
 
 [alias]
 	s = status
