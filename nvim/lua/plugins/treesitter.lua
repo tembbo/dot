@@ -5,60 +5,56 @@ return {
 
 	config = function()
 		local treesitter = require("nvim-treesitter")
+		local available_parsers = treesitter.get_available()
 
-		---@param buf integer
-		---@param language string
-		local function try_attach(buf, language)
-			if not vim.api.nvim_buf_is_valid(buf) then
+		local function attach_parser(buffer, language)
+			if not vim.api.nvim_buf_is_valid(buffer) then
 				return
 			end
 
-			-- Load the parser if it exists.
 			if not vim.treesitter.language.add(language) then
 				return
 			end
 
-			-- Enable Treesitter highlighting.
-			vim.treesitter.start(buf, language)
+			vim.treesitter.start(buffer, language)
 
-			-- Enable Treesitter indentation when the language supports it.
 			local has_indent_query = vim.treesitter.query.get(language, "indents") ~= nil
 
 			if has_indent_query then
-				vim.bo[buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+				vim.bo[buffer].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
 			end
 		end
 
-		local available_parsers = treesitter.get_available()
-
-		local group = vim.api.nvim_create_augroup("UserTreesitter", { clear = true })
+		local group = vim.api.nvim_create_augroup("treesitter", {
+			clear = true,
+		})
 
 		vim.api.nvim_create_autocmd("FileType", {
 			group = group,
 
 			callback = function(args)
-				local buf = args.buf
-				local filetype = args.match
+				local buffer = args.buf
+				local language = vim.treesitter.language.get_lang(args.match)
 
-				local language = vim.treesitter.language.get_lang(filetype)
 				if not language then
 					return
 				end
 
-				local installed_parsers = treesitter.get_installed("parsers")
+				local installed = treesitter.get_installed("parsers")
 
-				if vim.tbl_contains(installed_parsers, language) then
-					-- The parser is already installed.
-					try_attach(buf, language)
-				elseif vim.tbl_contains(available_parsers, language) then
-					-- Install the parser, then attach it to the buffer.
-					treesitter.install(language):await(function()
-						try_attach(buf, language)
-					end)
-				else
-					-- Try to attach a parser installed outside nvim-treesitter.
-					try_attach(buf, language)
+				if vim.tbl_contains(installed, language) then
+					attach_parser(buffer, language)
+					return
 				end
+
+				if not vim.tbl_contains(available_parsers, language) then
+					attach_parser(buffer, language)
+					return
+				end
+
+				treesitter.install(language):await(function()
+					attach_parser(buffer, language)
+				end)
 			end,
 		})
 	end,

@@ -8,7 +8,7 @@ return {
 			function()
 				require("conform").format({
 					async = true,
-					timeout_ms = 500,
+					timeout_ms = 1000,
 					lsp_format = "fallback",
 				})
 			end,
@@ -29,7 +29,10 @@ return {
 			bash = { "shfmt" },
 			astro = { "prettier" },
 		},
-		format_on_save = function()
+		format_on_save = function(buffer)
+			if vim.bo[buffer].buftype ~= "" then
+				return
+			end
 			return {
 				timeout_ms = 1000,
 				lsp_format = "fallback",

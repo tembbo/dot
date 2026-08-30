@@ -1,6 +1,7 @@
-require("options")
-
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+require("options")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -28,4 +29,4 @@ require("lazy").setup({
 })
 
 vim.keymap.set("i", "jk", "<esc>")
-vim.keymap.set("n", "<esc>", "<cmd>noh<cr>")
+vim.keymap.set("n", "<esc>", "<cmd>nohlsearch<cr>")
